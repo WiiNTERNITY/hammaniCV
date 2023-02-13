@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Tiro+Devanagari+Marathi&display=swap");
+
+$font-1: "Doasis", sans-serif;
+$font-2: "Doasis", sans-serif;
+$font-3: "Josefin Sans", sans-serif;
+
+$color-1: #2a1e51;
+$color-2: linear-gradient(#fed0c5, #8b47b5);
+$color-3: rgb(99, 164, 233);
+$color-4: #4fedd2;
+$color-5: #1220dd;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1rem auto;
+  max-width: 1370px;
+  font-family: $font-1;
+  color: $black;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $black;
+}
+.home,
+.knowledges,
+.contact,
+.portfolio {
+  display: flex;
+  @media screen and (max-width: 850px) {
+    display: block !important;
+  }
+}
+.homeContent,
+.knowledgesContent,
+.portfolioContent,
+.contactContent {
+  margin-left: 0.4rem;
+
+  @media screen and (max-width: 850px) {
+    margin-left: 0 !important;
+  }
+}
